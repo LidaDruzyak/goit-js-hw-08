@@ -85,6 +85,7 @@ imageList.addEventListener('click', function(event) {
   if(event.target.nodeName !== 'IMG') {
     return;
   }
+
   const bigImg = event.target.dataset.source;
   const modalImg = basicLightbox.create(`<img src="${bigImg}" width="1112" height="640"/>`);
   modalImg.show();
@@ -97,8 +98,6 @@ imageList.addEventListener('click', function(event) {
     }
   };
    document.addEventListener('keydown', closeImg);
-
-imageList.addEventListener('click', event );
 });
 
 
